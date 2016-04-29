@@ -8,18 +8,27 @@
 
 import UIKit
 
+private let storyBoardName = "MyPopUp"
+private let storyBoardIdentifier = "MyPopUpStoryBoard"
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
+    
+    @IBAction func displayPopUpStoryBoard() {
+        let storyboard = UIStoryboard(name:storyBoardName,
+                                      bundle: NSBundle.mainBundle())
+        let popUpVC = storyboard.instantiateViewControllerWithIdentifier(storyBoardIdentifier)
+        addChildViewController(popUpVC)
+        view.addSubview(popUpVC.view)
     }
 
-
+    @IBAction func displayPopUpFromNib() {
+        
+    }
+    
 }
 
