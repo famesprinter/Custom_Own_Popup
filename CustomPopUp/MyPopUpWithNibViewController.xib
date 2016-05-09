@@ -22,7 +22,8 @@
                     <rect key="frame" x="90" y="150" width="420" height="300"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWF-wJ-O4h">
-                            <rect key="frame" x="191" y="262" width="39" height="30"/>
+                            <rect key="frame" x="182" y="253" width="56" height="39"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
                             <state key="normal" title="Close"/>
                             <connections>
                                 <action selector="closePopUp" destination="-1" eventType="touchUpInside" id="rh3-Sb-e5d"/>
@@ -35,9 +36,9 @@
                         <constraint firstItem="gWF-wJ-O4h" firstAttribute="bottom" secondItem="rHd-YN-CE2" secondAttribute="bottomMargin" id="Qih-lD-wE6"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, I'm PopUp from Nib ; ))" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooO-Hf-KnR">
-                    <rect key="frame" x="167" y="286" width="266" height="28"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World ; )" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooO-Hf-KnR">
+                    <rect key="frame" x="216" y="284" width="168" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
