@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyPopUpWithNibViewController" customModule="CustomPopUp" customModuleProvider="target">
+            <connections>
+                <outlet property="popUpView" destination="rHd-YN-CE2" id="YaH-7h-Avx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHd-YN-CE2">
+                    <rect key="frame" x="90" y="150" width="420" height="300"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWF-wJ-O4h">
+                            <rect key="frame" x="191" y="262" width="39" height="30"/>
+                            <state key="normal" title="Close"/>
+                            <connections>
+                                <action selector="closePopUp" destination="-1" eventType="touchUpInside" id="rh3-Sb-e5d"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="gWF-wJ-O4h" firstAttribute="centerX" secondItem="rHd-YN-CE2" secondAttribute="centerX" id="9WY-Ot-PjK"/>
+                        <constraint firstItem="gWF-wJ-O4h" firstAttribute="bottom" secondItem="rHd-YN-CE2" secondAttribute="bottomMargin" id="Qih-lD-wE6"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, I'm PopUp from Nib ; ))" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooO-Hf-KnR">
+                    <rect key="frame" x="167" y="286" width="266" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="rHd-YN-CE2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9mg-22-re4"/>
+                <constraint firstItem="ooO-Hf-KnR" firstAttribute="centerX" secondItem="rHd-YN-CE2" secondAttribute="centerX" id="Qrp-oT-tJO"/>
+                <constraint firstItem="ooO-Hf-KnR" firstAttribute="centerY" secondItem="rHd-YN-CE2" secondAttribute="centerY" id="Qv4-er-3jq"/>
+                <constraint firstItem="rHd-YN-CE2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Uxj-H3-ipK"/>
+                <constraint firstItem="rHd-YN-CE2" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.5" id="cIz-f8-Tgf"/>
+                <constraint firstItem="rHd-YN-CE2" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="vXT-1r-arq"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -15,6 +15,8 @@
 		F0717D0C1CD354D60057B276 /* bg_view.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0717D0B1CD354D60057B276 /* bg_view.jpg */; };
 		F0717D0F1CD357280057B276 /* MyPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0717D0D1CD357280057B276 /* MyPopUp.storyboard */; };
 		F0717D111CD3586E0057B276 /* MyPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0717D101CD3586E0057B276 /* MyPopUpViewController.swift */; };
+		F08FEC631CE09906001A8BED /* MyPopUpWithNibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08FEC611CE09906001A8BED /* MyPopUpWithNibViewController.swift */; };
+		F08FEC641CE09906001A8BED /* MyPopUpWithNibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08FEC621CE09906001A8BED /* MyPopUpWithNibViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F0717D0B1CD354D60057B276 /* bg_view.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_view.jpg; sourceTree = "<group>"; };
 		F0717D0E1CD357280057B276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MyPopUp.storyboard; sourceTree = "<group>"; };
 		F0717D101CD3586E0057B276 /* MyPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPopUpViewController.swift; sourceTree = "<group>"; };
+		F08FEC611CE09906001A8BED /* MyPopUpWithNibViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPopUpWithNibViewController.swift; sourceTree = "<group>"; };
+		F08FEC621CE09906001A8BED /* MyPopUpWithNibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPopUpWithNibViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				F0717D101CD3586E0057B276 /* MyPopUpViewController.swift */,
 				F0717CF81CD349A50057B276 /* Main.storyboard */,
 				F0717D0D1CD357280057B276 /* MyPopUp.storyboard */,
+				F08FEC611CE09906001A8BED /* MyPopUpWithNibViewController.swift */,
+				F08FEC621CE09906001A8BED /* MyPopUpWithNibViewController.xib */,
 				F0717D071CD349EB0057B276 /* Supporting Files */,
 			);
 			path = CustomPopUp;
@@ -147,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F08FEC641CE09906001A8BED /* MyPopUpWithNibViewController.xib in Resources */,
 				F0717D0F1CD357280057B276 /* MyPopUp.storyboard in Resources */,
 				F0717CFF1CD349A50057B276 /* LaunchScreen.storyboard in Resources */,
 				F0717D0C1CD354D60057B276 /* bg_view.jpg in Resources */,
@@ -165,6 +172,7 @@
 				F0717D111CD3586E0057B276 /* MyPopUpViewController.swift in Sources */,
 				F0717CF71CD349A40057B276 /* ViewController.swift in Sources */,
 				F0717CF51CD349A40057B276 /* AppDelegate.swift in Sources */,
+				F08FEC631CE09906001A8BED /* MyPopUpWithNibViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

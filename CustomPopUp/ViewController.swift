@@ -10,6 +10,7 @@ import UIKit
 
 private let storyBoardName = "MyPopUp"
 private let storyBoardIdentifier = "MyPopUpStoryBoard"
+private let popUpNibName = "MyPopUpWithNibViewController"
 
 class ViewController: UIViewController {
 
@@ -27,7 +28,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func displayPopUpFromNib() {
-        
+        let vc = MyPopUpWithNibViewController(nibName: popUpNibName, bundle: nil)
+        addChildViewController(vc)
+        vc.view.frame = view.frame
+        view.addSubview(vc.view)
+        vc.didMoveToParentViewController(self)
     }
     
 }
